@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="site-header">
       <h1>Список бажань</h1>
       <nav>
         <a href="#add-wish">Додати бажання</a>
@@ -20,7 +20,7 @@
     <main>
       <section id="add-wish">
         <h2>Додати бажання</h2>
-        <form id="wish-form">
+        <form id="wish-form" class="wish-form">
           <label for="wish-name">Назва бажання:</label>
           <input type="text" id="wish-name" name="wish-name" required />
 
@@ -46,8 +46,8 @@
 
       <section id="wish-list">
         <h2>Список бажань</h2>
-        <div id="wish-items">
-          <article>
+        <div id="wish-items" class="cards">
+          <article class="card">
             <img
               src="https://content.rozetka.com.ua/goods/images/big/677460228.jpg"
               alt="Новий ноутбук"
@@ -56,7 +56,7 @@
             <p>Ціна: 109999.00 грн</p>
           </article>
 
-          <article>
+          <article class="card">
             <img
               src="https://content.rozetka.com.ua/goods/images/big/595395804.jpg"
               alt="Навушники"
@@ -65,7 +65,7 @@
             <p>Ціна: 3399.00 грн</p>
           </article>
 
-          <article>
+          <article class="card">
             <img
               src="https://work.njae.me.uk/content/images/size/w2000/2018/04/grokking-algorithms.png"
               alt="Книга з програмування"
@@ -75,14 +75,14 @@
           </article>
         </div>
       </section>
-
-      <aside id="total">
-        <h2>Сума</h2>
-        <p id="total-amount">114898.00</p>
-      </aside>
     </main>
 
-    <footer>
+    <aside id="total" class="total">
+      <h2>Сума</h2>
+      <p id="total-amount" class="total__amount">114898.00</p>
+    </aside>
+
+    <footer class="site-footer">
       <p>&copy; 2026 КПІ. Усі права захищені.</p>
       <address>
         <p>
